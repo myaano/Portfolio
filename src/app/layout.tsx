@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Urbanist } from "next/font/google";
+import { Geist, Geist_Mono, Urbanist, Nanum_Myeongjo } from "next/font/google";
 import "./globals.css";
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
   subsets: ["latin"],
+});
+
+const nanummyeongjo = Nanum_Myeongjo({
+  variable: "--font-nanum-myeongjo",
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 const geistSans = Geist({
@@ -26,7 +32,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${urbanist.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${urbanist.variable} ${nanummyeongjo.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
