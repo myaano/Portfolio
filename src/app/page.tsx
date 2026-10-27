@@ -1,6 +1,9 @@
 "use client";
 import Image from "next/image";
 import mainIMage from "../../public/received_2336663563385700.jpeg";
+import Repository from "../../public/Repository.png";
+import Gender from "../../public/Gender.png";
+import Yamanote from "../../public/Yamanote.png";
 import { useEffect, useRef } from "react";
 // lenis
 import { ReactLenis, useLenis, type LenisRef } from "lenis/react";
@@ -38,10 +41,10 @@ export default function Home() {
   const lineBar = useRef<HTMLSpanElement>(null);
   useGSAP(
     () => {
-      if (!lenis) return;
-      history.scrollRestoration = "manual";
-      window.scrollTo(0, 0);
-      lenis.stop();
+      // if (!lenis) return;
+      // history.scrollRestoration = "manual";
+      // window.scrollTo(0, 0);
+      // lenis.stop();
 
       CustomEase.create("textSnap", "0.7, 0, 0.2, 1");
       //intro split texts
@@ -87,7 +90,7 @@ export default function Home() {
       gsap.fromTo(
         lineBar.current,
         { yPercent: -100 },
-        { yPercent: 100, duration: 2, ease: "power2.inOut", repeat: -1 },
+        { yPercent: 100, duration: 1.5, ease: "power2.inOut", repeat: -1 },
       );
     },
 
@@ -146,8 +149,8 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="h-[160vh] flex bg-green-500 py-[10vh]">
-            <div className="bg-[#3b3232] w-fit text-4xl py-3 [writing-mode:vertical-rl] flex items-center gap-3 self-start text-white tracking-[0.2em]">
+          <section className="h-[150vh] flex bg-green-500 py-[10vh]">
+            <div className="bg-[#3b3232] w-fit text-4xl px-5 py-3 [writing-mode:vertical-rl] flex items-center gap-3 self-start text-white tracking-[0.2em]">
               <h1>PROJECTS</h1>
               <div className="overflow-hidden relative h-25 w-0.5 self-center ">
                 <span
@@ -156,8 +159,111 @@ export default function Home() {
                 ></span>
               </div>
             </div>
-            <div className="bg-red-500 flex flex-1 px-[15vh]">
-              content here later
+            <div className="bg-red-500 flex flex-1 py-[15vh] pl-[5vw] pr-[2.5vw] ">
+              <div className="font-nanum-myeongjo bg-blue-900 flex-1 text-8xl flex flex-col justify-between select-none">
+                <div className="bg-amber-800 flex justify-between items-start group">
+                  <h1 className="underline decoration-transparent decoration-2 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current self-start bg-blue-500">
+                    Repository
+                  </h1>
+                  <div className="relative z-20 w-[40vw]  opacity-0 group-hover:opacity-100 transition-opacity ease-out duration-300 text-base pointer-events-none group-hover:pointer-events-auto">
+                    <div className="h-[70vh] w-full absolute z-10 top-0 flex flex-col">
+                      <div className="relative w-full aspect-1366/651">
+                        <Image
+                          src={Repository}
+                          alt="Repository"
+                          fill={true}
+                          loading="eager"
+                          className="object-cover z-10"
+                          sizes="(min-width: 1024px) 65vw, 100vw"
+                        />
+                      </div>
+                      <div className="bg-[#800000] flex-1 p-4 font-urbanist flex flex-col gap-5 text-white">
+                        <h1 className="text-2xl">
+                          Sorsogon State University <br /> Institutional
+                          Repository
+                        </h1>
+                        <div className=" flex flex-1 items-end justify-between font-extralight">
+                          <div className="flex flex-col gap-1 justify-end h-full text-sm">
+                            <h1>Educational</h1>
+                            <h1>Web Design & Flow</h1>
+                            <h1>Front-End Dev</h1>
+                          </div>
+                          <p className="w-[14vw] text-sm ">
+                            Dissemination, Preservation and Management of
+                            Scholarly work for SorSU
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-blue-100 flex group items-start">
+                  <h1 className="underline decoration-transparent decoration-2 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current">
+                    Masculinity
+                  </h1>
+                  <div className="relative z-20 w-[40vw] opacity-0 group-hover:opacity-100 transition-opacity ease-out duration-300 text-base pointer-events-none group-hover:pointer-events-auto">
+                    <div className="h-[70vh] w-full absolute z-10 flex flex-col inset-0 m-auto">
+                      <div className="relative w-full aspect-1365/652">
+                        <Image
+                          src={Gender}
+                          alt="Gender"
+                          fill={true}
+                          loading="eager"
+                          className="object-cover z-10"
+                          sizes="(min-width: 1024px) 65vw, 100vw"
+                        />
+                      </div>
+                      <div className="bg-black flex-1 p-4 font-urbanist flex flex-col gap-5 text-white">
+                        <h1 className="text-2xl">Performative Masculinity</h1>
+                        <div className=" flex flex-1 items-end justify-between font-extralight">
+                          <div className=" flex flex-col gap-1 justify-end h-full text-sm">
+                            <h1>Gender & Society</h1>
+                            <h1>Web Flow & Design</h1>
+                            <h1>Front-End Dev</h1>
+                          </div>
+                          <p className="w-[14vw] text-sm">
+                            Discusses how Masculinity and Gender is shaped by
+                            Society, and how it affects men and women alike
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-emerald-700 flex justify-between group items-start">
+                  <h1 className="underline decoration-transparent decoration-3 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current">
+                    Yamanote
+                  </h1>
+                  <div className="relative z-20 w-[40vw] h-full opacity-0 group-hover:opacity-100 transition-opacity ease-out duration-300 text-base pointer-events-none group-hover:pointer-events-auto">
+                    <div className=" h-[70vh] w-full absolute z-10 bottom-0 flex flex-col">
+                      <div className="relative w-full aspect-1350/649">
+                        <Image
+                          src={Yamanote}
+                          alt="Yamanote"
+                          fill={true}
+                          loading="eager"
+                          className="object-cover z-10"
+                          sizes="(min-width: 1024px) 65vw, 100vw"
+                        />
+                      </div>
+                      <div className="bg-[#9acd32] flex-1 p-4 font-urbanist flex flex-col gap-5 text-white">
+                        <h1 className="text-2xl ">Yamanote Outer Loop</h1>
+                        <div className="flex flex-1 items-end justify-between font-extralight">
+                          <div className="flex flex-col gap-1 justify-end h-full text-sm">
+                            <h1>Personal / Tourism</h1>
+                            <h1>Web Design & Flow</h1>
+                            <h1>Front-End Dev</h1>
+                          </div>
+                          <p className="w-[14vw] text-sm">
+                            Popular Stations in Yamanote Line, First Attempt in
+                            Design and Front-End Dev
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
           <section className="h-screen bg-pink-500">
