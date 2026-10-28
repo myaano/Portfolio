@@ -42,10 +42,10 @@ export default function Home() {
   const lineBar = useRef<HTMLSpanElement>(null);
   useGSAP(
     () => {
-      // if (!lenis) return;
-      // history.scrollRestoration = "manual";
-      // window.scrollTo(0, 0);
-      // lenis.stop();
+      if (!lenis) return;
+      history.scrollRestoration = "manual";
+      window.scrollTo(0, 0);
+      lenis.stop();
 
       CustomEase.create("textSnap", "0.7, 0, 0.2, 1");
       //intro split texts
@@ -313,8 +313,10 @@ export default function Home() {
                       </div>
                       <div className="justify-self-start">
                         <Link
-                          href="discord.com/users/748946609546723380"
+                          href="https://discord.com/users/748946609546723380"
                           className="focus:outline-none"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <h1 className="underline lg:decoration-transparent decoration-1 underline-offset-[0.10em] transition-colors duration-300 hover:bg-black hover:text-white hover:decoration-white ">
                             Discord
@@ -342,6 +344,8 @@ export default function Home() {
                         <Link
                           href="https://www.facebook.com/ai.ohto.3323457"
                           className="focus:outline-none"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <h1 className="underline lg:decoration-transparent decoration-1 underline-offset-[0.10em] transition-colors duration-300 hover:bg-black hover:text-white hover:decoration-white ">
                             Facebook
