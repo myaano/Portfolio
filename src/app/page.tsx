@@ -138,8 +138,8 @@ export default function Home() {
                     Who am I
                   </h1>
                   <p>
-                    A UI/UX Designer and Front-End Developer from Sorsogon,
-                    Philippines
+                    Mark Llorca UI/UX Designer and Front-End Developer from
+                    Sorsogon, Philippines
                   </p>
                   <p>
                     Following Swiss Design Principles, I strive that Art and
