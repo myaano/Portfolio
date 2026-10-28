@@ -138,7 +138,7 @@ export default function Home() {
                     Who am I
                   </h1>
                   <p>
-                    Mark Llorca UI/UX Designer and Front-End Developer from
+                    Mark Llorca, a UI/UX Designer and Front-End Developer from
                     Sorsogon, Philippines
                   </p>
                   <p>
