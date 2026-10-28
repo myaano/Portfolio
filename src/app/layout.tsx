@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Urbanist, Nanum_Myeongjo } from "next/font/google";
 import "./globals.css";
+import Cursor from "./components/cursor/page";
 
 const urbanist = Urbanist({
   variable: "--font-urbanist",
@@ -34,7 +35,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${urbanist.variable} ${nanummyeongjo.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Cursor />
+        {children}
+      </body>
     </html>
   );
 }

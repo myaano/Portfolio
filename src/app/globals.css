@@ -26,3 +26,17 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+* {
+  cursor: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  * {
+    cursor: none;
+  }
+}
+html {
+  scrollbar-width: none; /* Firefox, and current Chrome/Safari */
+}
+html::-webkit-scrollbar {
+  display: none; /* older WebKit/Blink browsers */
+}
