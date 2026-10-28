@@ -149,24 +149,24 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="h-[150vh] flex bg-green-500 py-[10vh]">
-            <div className="bg-[#3b3232] w-fit text-4xl px-5 py-3 [writing-mode:vertical-rl] flex items-center gap-3 self-start text-white tracking-[0.2em]">
+          <section className="h-[180vh] flex bg-green-500 lg:py-[10vh]">
+            <div className="bg-[#3b3232] w-fit lg:text-4xl px-5 lg:py-3 [writing-mode:vertical-rl] flex items-center gap-3 self-start text-white tracking-[0.2em]">
               <h1>PROJECTS</h1>
-              <div className="overflow-hidden relative h-25 w-0.5 self-center ">
+              <div className="overflow-hidden relative h-20 w-0.5 self-center ">
                 <span
                   ref={lineBar}
                   className="absolute left-0 top-0 h-full w-full bg-white"
                 ></span>
               </div>
             </div>
-            <div className="bg-red-500 flex flex-1 py-[15vh] pl-[5vw] pr-[2.5vw] ">
-              <div className="font-nanum-myeongjo bg-blue-900 flex-1 text-8xl flex flex-col justify-between select-none">
-                <div className="bg-amber-800 flex justify-between items-start group">
+            <div className="bg-red-500 flex flex-1 py-[15vh] lg:pl-[5vw] lg:pr-[2.5vw] px-[5vw] ">
+              <div className="font-nanum-myeongjo bg-blue-900 flex-1 text-5xl lg:text-8xl flex flex-col lg:justify-between select-none gap-15 lg:gap-0">
+                <div className="bg-amber-800 flex flex-col lg:flex-row justify-between items-start group gap-8 lg:gap-0">
                   <h1 className="underline decoration-transparent decoration-2 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current self-start bg-blue-500">
                     Repository
                   </h1>
-                  <div className="relative z-20 w-[40vw]  opacity-0 group-hover:opacity-100 transition-opacity ease-out duration-300 text-base pointer-events-none group-hover:pointer-events-auto">
-                    <div className="h-[70vh] w-full absolute z-10 top-0 flex flex-col">
+                  <div className="lg:relative z-20 w-full lg:w-[40vw] lg:opacity-0 lg:group-hover:opacity-100 transition-opacity ease-out duration-300 text-base pointer-events-none group-hover:pointer-events-auto">
+                    <div className="h-auto min-h-[30vh] lg:h-[70vh] w-full lg:absolute z-10 top-0 flex flex-col">
                       <div className="relative w-full aspect-1366/651">
                         <Image
                           src={Repository}
@@ -178,17 +178,17 @@ export default function Home() {
                         />
                       </div>
                       <div className="bg-[#800000] flex-1 p-4 font-urbanist flex flex-col gap-5 text-white">
-                        <h1 className="text-2xl">
+                        <h1 className="text-xl lg:text-2xl">
                           Sorsogon State University <br /> Institutional
                           Repository
                         </h1>
-                        <div className=" flex flex-1 items-end justify-between font-extralight">
-                          <div className="flex flex-col gap-1 justify-end h-full text-sm">
+                        <div className=" flex flex-1 items-end justify-between text-xs lg:text-sm font-extralight">
+                          <div className="flex flex-col lg:gap-1 justify-end h-full">
                             <h1>Educational</h1>
                             <h1>Web Design & Flow</h1>
                             <h1>Front-End Dev</h1>
                           </div>
-                          <p className="w-[14vw] text-sm ">
+                          <p className="w-[45vw] lg:w-[14vw] leading-none">
                             Dissemination, Preservation and Management of
                             Scholarly work for SorSU
                           </p>
@@ -197,12 +197,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-blue-100 flex group items-start">
-                  <h1 className="underline decoration-transparent decoration-2 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current">
+                <div className="bg-blue-100 flex flex-col lg:flex-row group items-start gap-8 lg:gap-0">
+                  <h1 className="underline decoration-transparent decoration-2 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current self-start">
                     Masculinity
                   </h1>
-                  <div className="relative z-20 w-[40vw] opacity-0 group-hover:opacity-100 transition-opacity ease-out duration-300 text-base pointer-events-none group-hover:pointer-events-auto">
-                    <div className="h-[70vh] w-full absolute z-10 flex flex-col inset-0 m-auto">
+                  <div className="lg:relative z-20 w-full lg:w-[40vw] lg:opacity-0 lg:group-hover:opacity-100 transition-opacity ease-out duration-300 text-base pointer-events-none group-hover:pointer-events-auto">
+                    <div className="h-auto min-h-[30vh] lg:h-[70vh] w-full lg:absolute z-10 flex flex-col inset-0 m-auto">
                       <div className="relative w-full aspect-1365/652">
                         <Image
                           src={Gender}
@@ -215,13 +215,13 @@ export default function Home() {
                       </div>
                       <div className="bg-black flex-1 p-4 font-urbanist flex flex-col gap-5 text-white">
                         <h1 className="text-2xl">Performative Masculinity</h1>
-                        <div className=" flex flex-1 items-end justify-between font-extralight">
-                          <div className=" flex flex-col gap-1 justify-end h-full text-sm">
+                        <div className=" flex flex-1 items-end justify-between font-extralight text-xs lg:text-sm">
+                          <div className=" flex flex-col gap-1 justify-end h-full">
                             <h1>Gender & Society</h1>
                             <h1>Web Flow & Design</h1>
                             <h1>Front-End Dev</h1>
                           </div>
-                          <p className="w-[14vw] text-sm">
+                          <p className="w-[40vw] lg:w-[14vw] leading-none">
                             Discusses how Masculinity and Gender is shaped by
                             Society, and how it affects men and women alike
                           </p>
@@ -230,12 +230,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-emerald-700 flex justify-between group items-start">
-                  <h1 className="underline decoration-transparent decoration-3 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current">
+                <div className="bg-emerald-700 flex flex-col lg:flex-row justify-between group items-start gap-8 lg:gap-0">
+                  <h1 className="underline decoration-transparent decoration-3 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current self-start">
                     Yamanote
                   </h1>
-                  <div className="relative z-20 w-[40vw] h-full opacity-0 group-hover:opacity-100 transition-opacity ease-out duration-300 text-base pointer-events-none group-hover:pointer-events-auto">
-                    <div className=" h-[70vh] w-full absolute z-10 bottom-0 flex flex-col">
+                  <div className="lg:relative z-20 w-full lg:w-[40vw] h-full lg:opacity-0 lg:group-hover:opacity-100 transition-opacity ease-out duration-300 text-base pointer-events-none group-hover:pointer-events-auto">
+                    <div className="h-auto min-h-[30vh] lg:h-[70vh] w-full lg:absolute z-10 bottom-0 flex flex-col">
                       <div className="relative w-full aspect-1350/649">
                         <Image
                           src={Yamanote}
@@ -248,13 +248,13 @@ export default function Home() {
                       </div>
                       <div className="bg-[#9acd32] flex-1 p-4 font-urbanist flex flex-col gap-5 text-white">
                         <h1 className="text-2xl ">Yamanote Outer Loop</h1>
-                        <div className="flex flex-1 items-end justify-between font-extralight">
-                          <div className="flex flex-col gap-1 justify-end h-full text-sm">
+                        <div className="flex flex-1 items-end justify-between font-extralight text-xs lg:text-sm ">
+                          <div className="flex flex-col gap-1 justify-end h-full ">
                             <h1>Personal / Tourism</h1>
                             <h1>Web Design & Flow</h1>
                             <h1>Front-End Dev</h1>
                           </div>
-                          <p className="w-[14vw] text-sm">
+                          <p className="w-[40vw] lg:w-[14vw]">
                             Popular Stations in Yamanote Line, First Attempt in
                             Design and Front-End Dev
                           </p>
