@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import mainIMage from "../../public/received_2336663563385700.jpeg";
 import Repository from "../../public/Repository.png";
 import Gender from "../../public/Gender.png";
@@ -149,22 +150,30 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="h-[180vh] flex bg-green-500 lg:py-[10vh]">
-            <div className="bg-[#3b3232] w-fit lg:text-4xl px-5 lg:py-3 [writing-mode:vertical-rl] flex items-center gap-3 self-start text-white tracking-[0.2em]">
-              <h1>PROJECTS</h1>
-              <div className="overflow-hidden relative h-20 w-0.5 self-center ">
-                <span
-                  ref={lineBar}
-                  className="absolute left-0 top-0 h-full w-full bg-white"
-                ></span>
+          <section className="min-h-dvh lg:h-[150vh] flex flex-col lg:flex-row bg-white lg:pt-[10vh]">
+            <div className="h-full border-r border-r-[#3b3232]">
+              <div className="bg-[#3b3232] w-fit lg:text-4xl px-5 lg:py-3 [writing-mode:vertical-rl] flex items-center gap-3 self-start text-white tracking-[0.2em]">
+                <h1>PROJECTS</h1>
+                <div className="overflow-hidden relative h-20 w-0.5 self-center ">
+                  <span
+                    ref={lineBar}
+                    className="absolute left-0 top-0 h-full w-full bg-white"
+                  ></span>
+                </div>
               </div>
             </div>
-            <div className="bg-red-500 flex flex-1 py-[15vh] lg:pl-[5vw] lg:pr-[2.5vw] px-[5vw] ">
-              <div className="font-nanum-myeongjo bg-blue-900 flex-1 text-5xl lg:text-8xl flex flex-col lg:justify-between select-none gap-15 lg:gap-0">
-                <div className="bg-amber-800 flex flex-col lg:flex-row justify-between items-start group gap-8 lg:gap-0">
-                  <h1 className="underline decoration-transparent decoration-2 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current self-start bg-blue-500">
-                    Repository
-                  </h1>
+            <div className="flex flex-1 py-[15vh] lg:pl-[5vw] lg:pr-[2.5vw] px-[5vw] border-y border-y-[#3b3232] lg:border-none">
+              <div className="font-nanum-myeongjo flex-1 text-5xl lg:text-8xl flex flex-col lg:justify-between select-none gap-15 lg:gap-0">
+                <div className="flex flex-col lg:flex-row justify-between items-start group gap-8 lg:gap-0">
+                  <Link
+                    href="https://www.sorsu-repository.space/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h1 className="underline lg:decoration-transparent decoration-2 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current self-start">
+                      Repository
+                    </h1>
+                  </Link>
                   <div className="lg:relative z-20 w-full lg:w-[40vw] lg:opacity-0 lg:group-hover:opacity-100 transition-opacity ease-out duration-300 text-base pointer-events-none group-hover:pointer-events-auto">
                     <div className="h-auto min-h-[30vh] lg:h-[70vh] w-full lg:absolute z-10 top-0 flex flex-col">
                       <div className="relative w-full aspect-1366/651">
@@ -197,10 +206,16 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-blue-100 flex flex-col lg:flex-row group items-start gap-8 lg:gap-0">
-                  <h1 className="underline decoration-transparent decoration-2 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current self-start">
-                    Masculinity
-                  </h1>
+                <div className="flex flex-col lg:flex-row group items-start gap-8 lg:gap-0">
+                  <Link
+                    href="https://gender-society-midterm.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h1 className="underline lg:decoration-transparent decoration-2 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current self-start">
+                      Masculinity
+                    </h1>
+                  </Link>
                   <div className="lg:relative z-20 w-full lg:w-[40vw] lg:opacity-0 lg:group-hover:opacity-100 transition-opacity ease-out duration-300 text-base pointer-events-none group-hover:pointer-events-auto">
                     <div className="h-auto min-h-[30vh] lg:h-[70vh] w-full lg:absolute z-10 flex flex-col inset-0 m-auto">
                       <div className="relative w-full aspect-1365/652">
@@ -230,10 +245,16 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-emerald-700 flex flex-col lg:flex-row justify-between group items-start gap-8 lg:gap-0">
-                  <h1 className="underline decoration-transparent decoration-3 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current self-start">
-                    Yamanote
-                  </h1>
+                <div className="flex flex-col lg:flex-row justify-between group items-start gap-8 lg:gap-0">
+                  <Link
+                    href="https://yamanote-sen.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h1 className="underline lg:decoration-transparent decoration-3 underline-offset-[0.10em] transition-colors duration-300 hover:decoration-current self-start">
+                      Yamanote
+                    </h1>
+                  </Link>
                   <div className="lg:relative z-20 w-full lg:w-[40vw] h-full lg:opacity-0 lg:group-hover:opacity-100 transition-opacity ease-out duration-300 text-base pointer-events-none group-hover:pointer-events-auto">
                     <div className="h-auto min-h-[30vh] lg:h-[70vh] w-full lg:absolute z-10 bottom-0 flex flex-col">
                       <div className="relative w-full aspect-1350/649">
@@ -254,7 +275,7 @@ export default function Home() {
                             <h1>Web Design & Flow</h1>
                             <h1>Front-End Dev</h1>
                           </div>
-                          <p className="w-[40vw] lg:w-[14vw]">
+                          <p className="w-[40vw] lg:w-[14vw] leading-none">
                             Popular Stations in Yamanote Line, First Attempt in
                             Design and Front-End Dev
                           </p>
@@ -266,14 +287,95 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="h-screen bg-pink-500">
-            <div className=""></div>
-          </section>
-          <section className="h-screen bg-red-500">
-            <div className=""></div>
-          </section>
-          <section className="h-screen bg-white">
-            <div className=""></div>
+          <section className="h-screen flex px-10 pt-10 lg:py-20 bg-white">
+            <div className="flex flex-col lg:flex-row w-full">
+              <div className="flex-1 flex flex-col">
+                <div className=" text-6xl lg:text-9xl">
+                  <h1>TALK</h1> <h1> THROUGH</h1>
+                </div>
+                <div className="flex lg:justify-center lg:items-center text-lg lg:text-2xl lg:pl-40 pt-10 lg:pt-0">
+                  <div className="grid grid-cols-[4rem_1fr] gap-y-5">
+                    <div className="group contents">
+                      <div className="pointer-events-none flex items-center justify-center">
+                        <svg
+                          width="38"
+                          height="23"
+                          viewBox="0 0 38 23"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                        >
+                          <path
+                            d="M1.5 9.5459C0.671573 9.5459 0 10.2175 0 11.0459C0 11.8743 0.671573 12.5459 1.5 12.5459L1.5 11.0459L1.5 9.5459ZM1.5 11.0459L1.5 12.5459L36.5 12.5459V11.0459V9.5459L1.5 9.5459L1.5 11.0459ZM37.5607 12.1066C38.1464 11.5208 38.1464 10.571 37.5607 9.98524L28.0147 0.439297C27.4289 -0.14649 26.4792 -0.14649 25.8934 0.439297C25.3076 1.02508 25.3076 1.97483 25.8934 2.56062L34.3787 11.0459L25.8934 19.5312C25.3076 20.117 25.3076 21.0667 25.8934 21.6525C26.4792 22.2383 27.4289 22.2383 28.0147 21.6525L37.5607 12.1066Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </div>
+                      <div className="justify-self-start">
+                        <Link
+                          href="discord.com/users/748946609546723380"
+                          className="focus:outline-none"
+                        >
+                          <h1 className="underline lg:decoration-transparent decoration-1 underline-offset-[0.10em] transition-colors duration-300 hover:bg-black hover:text-white hover:decoration-white ">
+                            Discord
+                          </h1>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="group contents">
+                      <div className="pointer-events-none flex items-center justify-center">
+                        <svg
+                          width="38"
+                          height="23"
+                          viewBox="0 0 38 23"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                        >
+                          <path
+                            d="M1.5 9.5459C0.671573 9.5459 0 10.2175 0 11.0459C0 11.8743 0.671573 12.5459 1.5 12.5459L1.5 11.0459L1.5 9.5459ZM1.5 11.0459L1.5 12.5459L36.5 12.5459V11.0459V9.5459L1.5 9.5459L1.5 11.0459ZM37.5607 12.1066C38.1464 11.5208 38.1464 10.571 37.5607 9.98524L28.0147 0.439297C27.4289 -0.14649 26.4792 -0.14649 25.8934 0.439297C25.3076 1.02508 25.3076 1.97483 25.8934 2.56062L34.3787 11.0459L25.8934 19.5312C25.3076 20.117 25.3076 21.0667 25.8934 21.6525C26.4792 22.2383 27.4289 22.2383 28.0147 21.6525L37.5607 12.1066Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </div>
+                      <div className="justify-self-start">
+                        <Link
+                          href="https://www.facebook.com/ai.ohto.3323457"
+                          className="focus:outline-none"
+                        >
+                          <h1 className="underline lg:decoration-transparent decoration-1 underline-offset-[0.10em] transition-colors duration-300 hover:bg-black hover:text-white hover:decoration-white ">
+                            Facebook
+                          </h1>
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="group contents">
+                      <div className="pointer-events-none flex items-center justify-center">
+                        <svg
+                          width="38"
+                          height="23"
+                          viewBox="0 0 38 23"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                        >
+                          <path
+                            d="M1.5 9.5459C0.671573 9.5459 0 10.2175 0 11.0459C0 11.8743 0.671573 12.5459 1.5 12.5459L1.5 11.0459L1.5 9.5459ZM1.5 11.0459L1.5 12.5459L36.5 12.5459V11.0459V9.5459L1.5 9.5459L1.5 11.0459ZM37.5607 12.1066C38.1464 11.5208 38.1464 10.571 37.5607 9.98524L28.0147 0.439297C27.4289 -0.14649 26.4792 -0.14649 25.8934 0.439297C25.3076 1.02508 25.3076 1.97483 25.8934 2.56062L34.3787 11.0459L25.8934 19.5312C25.3076 20.117 25.3076 21.0667 25.8934 21.6525C26.4792 22.2383 27.4289 22.2383 28.0147 21.6525L37.5607 12.1066Z"
+                            fill="black"
+                          />
+                        </svg>
+                      </div>
+                      <div className="justify-self-start">
+                        <h1>llorcamark00@gmail.com</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="items-start [writing-mode:vertical-rl]">
+              <h1>Mark Llorca</h1>
+            </div>
           </section>
         </main>
       </ReactLenis>
